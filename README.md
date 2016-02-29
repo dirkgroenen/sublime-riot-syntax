@@ -4,11 +4,15 @@
 
 Language definitions for [ES6+ JavaScript](http://kangax.github.io/compat-table/es6/) with [RiotJS](http://riotjs.com) extensions for Sublime Text 3.
 
-Adds syntax highlighting support for HTML right inside of ES6 strings (like \`...\`) when you are inside of `riot.tag('your-tag', {HTML_STRING}, opts, func)`.
+Adds syntax highlighting support for HTML right inside of ES6 strings (i.e \`...\`) when it's inside of `riot.tag('your-tag', ...)`.
 
 This package is a port of [`Babel-Sublime`](https://github.com/babel/babel-sublime) for RiotJS. The `Babel-Sublime` only supports syntax highlighting of [React](https://github.com/facebook/react) `.jsx` components. This package is here to change it. Basically, all it does, is that it makes your HTML inside of \`...\` strings to act like it's React's HTML inside of JavaScript.
 
 Please note, that it has no `jsx` support. It ships with a new syntax called `JavaScript Riot` which should be used only for your Riot's pure-js tags. If you are not planning to ever use `jsx`, you can use it as your default JavaScript syntax.
+
+## Screenshots
+
+<img src="https://raw.githubusercontent.com/ilearnio/sublime-riot-syntax/master/screenshots/before-after.png" width="587" height="396">
 
 ## Why to use plain JavaScript instead of `.tag` files?
   1. Linter support
