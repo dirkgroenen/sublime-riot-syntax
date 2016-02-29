@@ -1,4 +1,4 @@
-# riot-syntax
+# Riot Syntax
 
 > Only supports **Sublime Text 3**.
 
@@ -6,7 +6,7 @@ Language definitions for [ES6+ JavaScript](http://kangax.github.io/compat-table/
 
 Adds syntax highlighting support for HTML right inside of ES6 strings (i.e \`...\`) when it's inside of `riot.tag('your-tag', ...)`.
 
-This package is a port of [`Babel-Sublime`](https://github.com/babel/babel-sublime) for RiotJS. The `Babel-Sublime` only supports syntax highlighting of [React](https://github.com/facebook/react) `.jsx` components. This package is here to change it. Basically, all it does, is that it makes your HTML inside of \`...\` strings to act like it's React's HTML inside of JavaScript.
+This package is a port of [Babel-Sublime](https://github.com/babel/babel-sublime) for RiotJS. The Babel-Sublime only supports syntax highlighting of [React](https://github.com/facebook/react) `.jsx` components. This package is here to change it. Basically, all it does, is that it makes your HTML inside of \`...\` strings to act like it's React's HTML inside of JavaScript.
 
 Please note, that it has no `jsx` support. It ships with a new syntax called `JavaScript Riot` which should be used only for your Riot's pure-js tags. If you are not planning to ever use `jsx`, you can use it as your default JavaScript syntax.
 
@@ -24,7 +24,7 @@ Please note, that it has no `jsx` support. It ships with a new syntax called `Ja
 
 ## Installation
 
-Find it as [**riot-syntax**](https://packagecontrol.io/packages/riot-syntax) through [Package Control](https://packagecontrol.io/).
+Find it as [**Riot Syntax**](https://packagecontrol.io/packages/riot-syntax) through [Package Control](https://packagecontrol.io/).
 
 #### Setting as the default syntax
 
@@ -36,6 +36,6 @@ To set it as the default syntax for a particular extension:
 
 #### Setting a Color Scheme
 
-`riot-syntax` comes bundled with `Next`, `Monokai` and `Github` color themes. Select one from `Preferences` `->` `Color Scheme` `->` `Riot Syntax`
+Riot Syntax comes bundled with `Next`, `Monokai` and `Github` color themes. Select one from `Preferences` `->` `Color Scheme` `->` `Riot Syntax`
 
-* `riot-syntax` supports modern JavaScript syntax, including [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment), [shorthand methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions), [template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), and more.
+* Riot Syntax supports modern JavaScript syntax, including [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment), [shorthand methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions), [template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), and more.
