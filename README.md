@@ -4,7 +4,7 @@
 
 Language definitions for [ES6+ JavaScript](http://kangax.github.io/compat-table/es6/) with [RiotJS](http://riotjs.com) extensions for Sublime Text 3.
 
-Adds syntax highlighting support for HTML right inside of ES6 strings (i.e \`...\`) when it's inside of `riot.tag('your-tag', ...)`.
+Adds syntax highlighting support for HTML right inside of ES6 strings (i.e \`...\`) when it's inside of `riot.tag('your-tag', ...)`. It also supports modern JavaScript syntax, including [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment), [shorthand methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions), [template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), and more.
 
 This package is a port of [Babel-Sublime](https://github.com/babel/babel-sublime) for RiotJS. The Babel-Sublime only supports syntax highlighting of [React](https://github.com/facebook/react) `.jsx` components. This package is here to change it. Basically, all it does, is that it makes your HTML inside of \`...\` strings to act like it's React's HTML inside of JavaScript.
 
@@ -38,4 +38,21 @@ To set it as the default syntax for a particular extension:
 
 Riot Syntax comes bundled with `Next`, `Monokai` and `Github` color themes. Select one from `Preferences` `->` `Color Scheme` `->` `Riot Syntax`
 
-* Riot Syntax supports modern JavaScript syntax, including [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment), [shorthand methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions), [template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), and more.
+#### Configuring the "Sublime Linter" package
+
+If you are using a custom extension name (e.g: `.riot`) for your RiotJS tags and you want to have linting support for such file, then you need to customize "sublime linter" config file.
+
+Go to `Package Settings` `->` `Sublime Linter` `->` `Settings – User` and add this line `"javascript riot": "javascript"` to your `syntax_map`. After this modification your config file should look like so:
+
+```
+{
+  "user": {
+    ...
+    "syntax_map": {
+        ...
+        "javascript riot": "javascript" // <- add this line
+    },
+    ...
+  }
+}
+```
