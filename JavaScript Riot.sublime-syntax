@@ -1157,36 +1157,15 @@ contexts:
           pop: true
 
   literal-riot:
-    - match: riot.tag2?\s*\(\s*
-    # - match: riot.tag2?\(('[^']+', `\s+
-    # - match: (?<=\(|\{|\[|,|&&|\|\||\?|:|=|=>|\Wreturn|^return|^)(?=\s*<[_$a-zA-Z])
+    - match: riot\.tag2?\s*\(\s*
       set:
         - include: literal-string
         - match: '`'
           set:
             - meta_content_scope: meta.riot.js
-            # - match: (?<=/>`|>`)
-            # pop: true
             - include: riot-tag-start
             - match: '`'
               pop: true
-
-  # template-string-body:
-  #   - meta_include_prototype: false
-  #   - meta_scope: string.interpolated.js
-  #   - match: \\`
-  #     scope: constant.character.escape.js
-  #   - match: '`'
-  #     scope: keyword.other.template.end.js
-  #     pop: true
-  #   - match: \${
-  #     scope: keyword.other.substitution.begin.js
-  #     set:
-  #       - match: '}'
-  #         scope: keyword.other.substitution.end.js
-  #         set: template-string-body
-  #       - include: expression
-  #   - include: string-content
 
   riot-attribute-assignment:
     - match: =
