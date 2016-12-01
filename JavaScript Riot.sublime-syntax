@@ -1157,7 +1157,7 @@ contexts:
           pop: true
 
   literal-riot:
-    - match: riot\.tag2?\s*\(\s*
+    - match: (riot\.)?tag2?\s*\(\s*
       set:
         - include: literal-string
         - match: '`'
